@@ -10,15 +10,29 @@
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title><router-link :to="{name: 'home'}">Home</router-link></v-list-item-title>
+            <v-list-item-title><router-link :to="{name: 'Home'}">Home</router-link></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item router :to="{name: 'About'}">
           <v-list-item-action>
             <v-icon>mdi-email</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title><router-link :to="{path: '/about'}">About</router-link></v-list-item-title>
+            <v-list-item-title>About</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item router>
+          <v-list-item-action>
+            <v-icon>mdi-users</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title><router-link :to="{
+                name: 'Users',
+                params: {
+                  userId: 1337,
+                  name: '정진욱'
+                }
+              }">Users</router-link></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
