@@ -28,15 +28,7 @@
           <v-list-item-content>
             <v-list-item-title><router-link :to="{
                 name: 'Users',
-                params: {
-                  userId: 1337,
-                  name: '정진욱'
-                },
-                query: {
-                  group: 'member',
-                  category: 'trial'
-                }
-              }">Users</router-link></v-list-item-title>
+               }">Users</router-link></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

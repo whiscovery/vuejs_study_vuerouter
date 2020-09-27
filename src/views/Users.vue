@@ -1,12 +1,13 @@
 <template>
-<div>
+<
+  row wrap pt-5 text-xs-center
+  style="max-width:500px;margin: 0 auto;"
+>
+  <v-flex xs12>
     <h1> Users </h1>
-    <p>{{ userId }}</p>
-    <p>{{ $route.params.name }}</p>
-    <p>{{ $route.query}}</p>
-    <p>{{ $route.query.group}}, {{$route.query.category}}</p>
-    <p></p>
-</div>
+    <p>유저를 검색합니다</p>
+  </v-flex>
+</v-layout>
 </template>
 
 <script>
