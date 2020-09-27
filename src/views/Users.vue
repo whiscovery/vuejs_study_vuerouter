@@ -3,6 +3,8 @@
     <h1> Users </h1>
     <p>{{ userId }}</p>
     <p>{{ $route.params.name }}</p>
+    <p>{{ $route.query}}</p>
+    <p>{{ $route.query.group}}, {{$route.query.category}}</p>
     <p></p>
 </div>
 </template>
