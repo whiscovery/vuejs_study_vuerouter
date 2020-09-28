@@ -11,22 +11,32 @@ const About = () => {
 const Users = () => {
   return import(/* webpackChunkName: "users" */ '../views/Users.vue')
 }
-
+const UsersDetail = () => {
+  return import(/* webpackChunkName: "usersdetail" */ '../views/UsersDetail.vue')
+}
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'about',
     component: About
   },
   {
     path: '/users',
-    name: 'Users',
-    component: Users
+    name: 'users',
+    component: Users,
+    // 새로운 주소 리스트
+    children: [
+      {
+        path: ':id', // 입력을 받아오는 것이므로 바인딩
+        name: 'users-detail',
+        component: UsersDetail
+      }
+    ]
   }
 ]
 

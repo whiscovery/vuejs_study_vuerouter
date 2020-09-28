@@ -10,10 +10,10 @@
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title><router-link :to="{name: 'Home'}">Home</router-link></v-list-item-title>
+            <v-list-item-title><router-link :to="{name: 'home'}">Home</router-link></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item router :to="{name: 'About'}">
+        <v-list-item router :to="{name: 'about'}">
           <v-list-item-action>
             <v-icon>mdi-email</v-icon>
           </v-list-item-action>
@@ -27,7 +27,7 @@
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title><router-link :to="{
-                name: 'Users',
+                name: 'users',
                }">Users</router-link></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
